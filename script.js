@@ -614,13 +614,19 @@ const Body = () => {
     return(
         <div className="body">
             <div className="res-container">
-                <RestaurantCard resData =  {resList[0]?.info}/>    
+                {/* <RestaurantCard resData =  {resList[0]?.info}/>    
                 <RestaurantCard resData =  {resList[1]?.info}/>    
                 <RestaurantCard resData =  {resList[2]?.info}/>    
                 <RestaurantCard resData =  {resList[3]?.info}/>    
                 <RestaurantCard resData =  {resList[4]?.info}/>    
                 <RestaurantCard resData =  {resList[5]?.info}/>    
-                <RestaurantCard resData =  {resList[6]?.info}/>    
+                <RestaurantCard resData =  {resList[6]?.info}/>     */}
+                {resList.map((restaurant) => (
+                    <RestaurantCard
+                        key={restaurant.info.id}  // unique key required by React
+                        resData={restaurant.info}
+                    />
+                ))}
             </div>
 
         </div>
