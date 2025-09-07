@@ -1,0 +1,26 @@
+{
+  "name": "food-app",
+  "version": "1.0.0",
+  "description": "It's a food ordering website.",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "keywords": [
+    "food",
+    "ordering",
+    "online",
+    "food",
+    "ordering"
+  ],
+  "author": "roshan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
