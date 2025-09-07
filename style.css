@@ -43,3 +43,25 @@
     color: cadetblue;  /* Change color on hover */
     cursor: pointer;
 }
+
+/* Body container for all restaurant cards */
+.body{
+    margin: 20px;                  /* Space outside the header */
+    padding: 0 20px; 
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Individual restaurant card */
+.restaurant-card{
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* Restaurant image inside card */
+.restaurant-img{
+    width: 100%;
+}

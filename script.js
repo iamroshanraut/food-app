@@ -31,11 +31,56 @@ const Header = () => {
     )
 };
 
+// RestaurantCard Component
+// This component renders a single restaurant card
+// You can pass different restaurant data via props (name, cuisine, location, forTwo, image)
+const RestaurantCard = (props) =>{
+    const {name,cuisine,location,forTwo,image} = props;
+    return(
+        <div className="restaurant-card">
+            <img className="restaurant-img" src={image}/>
+            <h3>{name}</h3>
+            <h4>{cuisine}</h4>
+            <h5>{location}</h5>
+            <h5>{forTwo}</h5>
+        </div>
+    )
+};
+
+// Body Component
+// This component renders multiple RestaurantCard components
+// Different restaurant data is passed as props to each card
+const Body = () => {
+    return(
+        <div className="body">
+            <RestaurantCard 
+            name="China Bistro" 
+            cuisine="Japanese, chinese, korean" 
+            location="Select City Mall, Saket, Delhi" 
+            forTwo="1200 for Two" 
+            image = "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1687793147/b573955b816463d0adce9f87a6e30812.jpg"
+            />
+            <RestaurantCard 
+            name="Only Bar" 
+            cuisine="Continental, North Indian" 
+            location="Raj Lok Building, Nehru Place" 
+            forTwo="2200 for Two"
+            image= "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1671831467/869e211944e782937f4f7f38b33c85b0.jpg"
+            />
+
+        </div>
+    )
+}
+
 // AppLayout component → Main root component
 // (Right now it only renders Header, but later we can add more)
 const AppLayout = () => {
     return (
-        <Header />
+        <div>
+            <Header /> 
+            <Body />
+        </div>
+        
     )
 };
 
