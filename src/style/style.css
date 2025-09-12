@@ -1,73 +1,82 @@
 /* Reset default browser styles and set a common font */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 /* Header container styles */
 .header {
-    margin: 20px;                  /* Space outside the header */
-    padding: 0 20px;                /* Space inside (left & right) */
-    display: flex;                  /* Flexbox for layout */
-    justify-content: space-between; /* Space between logo & nav */
-    align-items: center;            /* Vertically center items */
-    border: 2px solid black;        /* Simple border for header */
+  margin: 20px; /* Space outside the header */
+  padding: 0 20px; /* Space inside (left & right) */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Space between logo & nav */
+  align-items: center; /* Vertically center items */
+  border: 2px solid black; /* Simple border for header */
 }
 
 /* Logo image size */
 .logo-img {
-    width: 100px;
+  width: 100px;
 }
 
 /* Hover effect on logo */
 .logo-img:hover {
-    cursor: pointer; /* Changes cursor to pointer on hover */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 /* Navigation container styles */
 .nav-itmes ul {
-    display: flex;            /* Align nav items in a row */
-    gap: 15px;                /* Space between nav items (px unit added) */
-    list-style-type: none;    /* Remove default bullets */
+  display: flex; /* Align nav items in a row */
+  gap: 15px; /* Space between nav items (px unit added) */
+  list-style-type: none; /* Remove default bullets */
 }
 
 /* Individual navigation item styles */
 .nav-itmes ul li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Hover effect on nav items */
 .nav-itmes ul li:hover {
-    color: cadetblue;  /* Change color on hover */
-    cursor: pointer;
+  color: cadetblue; /* Change color on hover */
+  cursor: pointer;
 }
 
 /* Body container for all restaurant cards */
-.body{
-    margin: 20px;                  /* Space outside the header */
-    padding: 0 20px; 
-    border: 2px solid black;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.body {
+  margin: 20px; /* Space outside the header */
+  padding: 0 20px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 /* Individual restaurant card */
-.restaurant-card{
-    width: 200px;
-    padding: 10px;
-    border: 1px solid black;
+.restaurant-card {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Restaurant image inside card */
-.restaurant-img{
-    width: 100%;
+.restaurant-img {
+  width: 100%;
 }
 
-.res-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  margin: 10px 0;
 }

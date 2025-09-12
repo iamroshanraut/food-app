@@ -1,22 +1,22 @@
-// Header component (functional component)
+// Header component
+// Shows the top part of the app with logo and navigation menu
 
 import { LOGO_URL } from "../assets/images";
 
-// Represents the top section of the app with logo and navigation menu
 const Header = () => {
   return (
     <div className="header">
-      {/* Logo Section */}
+      {/* Logo section */}
       <div className="logo">
         <img
           className="logo-img"
           src={LOGO_URL}
-          alt="Food Logo" /* alt added for accessibility */
+          alt="Food Logo" // alt text for accessibility
         />
       </div>
 
-      {/* Navigation Section */}
-      <div className="nav-itmes">
+      {/* Navigation menu */}
+      <div className="nav-items">
         <ul>
           <li>Home</li>
           <li>About</li>
