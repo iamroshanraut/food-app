@@ -28,10 +28,12 @@
 }
 
 /* Navigation container styles */
-.nav-itmes ul {
-  display: flex; /* Align nav items in a row */
+.nav-items ul {
+  display: flex; /*Align nav items in a row*/
   gap: 15px; /* Space between nav items (px unit added) */
   list-style-type: none; /* Remove default bullets */
+  justify-content: center;
+  align-items: center;
 }
 
 /* Individual navigation item styles */
@@ -44,15 +46,19 @@
   color: cadetblue; /* Change color on hover */
   cursor: pointer;
 }
+.login-btn {
+  padding: 10px 20px;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+}
 
 /* Body container for all restaurant cards */
 .body {
   margin: 20px; /* Space outside the header */
   padding: 0 20px;
   border: 2px solid black;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
 }
 
 /* Individual restaurant card */
@@ -76,7 +82,54 @@
   gap: 10px;
 }
 
+.shimmer-container {
+  display: flex;
+  gap: 10;
+}
+
+.shimmer-card {
+  width: 200px;
+  height: 150;
+  background-color: grey;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  width: 220px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn,
 .filter-btn {
-  padding: 10px 20px;
-  margin: 10px 0;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background: teal;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-btn:hover,
+.filter-btn:hover {
+  background: #006666; /* hover effect */
 }

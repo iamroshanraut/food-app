@@ -1,9 +1,12 @@
 // Header component
 // Shows the top part of the app with logo and navigation menu
 
+import { useEffect, useState } from "react";
 import { LOGO_URL } from "../assets/images";
 
 const Header = () => {
+  const [btnNameReact, setbtnNameReact] = useState("Login");
+
   return (
     <div className="header">
       {/* Logo section */}
@@ -22,6 +25,16 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Cart</li>
+          <button
+            className="login-btn"
+            onClick={() => {
+              btnNameReact === "Login"
+                ? setbtnNameReact("Logout")
+                : setbtnNameReact("Login");
+            }}
+          >
+            {btnNameReact}
+          </button>
         </ul>
       </div>
     </div>

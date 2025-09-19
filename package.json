@@ -17,10 +17,18 @@
   "author": "roshan",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.15.4"
+    "parcel": "^2.16.0"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamroshanraut/food-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iamroshanraut/food-app/issues"
+  },
+  "homepage": "https://github.com/iamroshanraut/food-app#readme"
 }
