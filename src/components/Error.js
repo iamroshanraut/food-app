@@ -5,7 +5,9 @@ const Error = () => {
   console.log(err);
   return (
     <div className="error-box">
-      <h2>⚠️ Error</h2>
+      <h2>
+        ⚠️ Error {err.status} {err.statusText}
+      </h2>
       <p>Something Went Wrong</p>
     </div>
   );
