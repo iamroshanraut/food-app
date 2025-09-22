@@ -1,13 +1,25 @@
-# Food App React Project
+# 🍴 Food App
 
-This is a simple React project for a Food App UI.
+A simple and responsive **Food App** built with **React.js**.  
+This project displays a list of restaurants/food items in a clean card-based UI.
 
-## Features
+---
 
-- Responsive design
-- Interactive UI components
+## 🚀 Features
 
-## Technologies Used
+- 📱 Responsive design (mobile + desktop)
+- 🍔 Food/Restaurant card layout
+- 🔍 Search functionality (if implemented)
+- ⚡ Fast and lightweight React app
 
-- HTML, CSS, JavaScript
-- React.js
+---
+
+## 🛠️ Tech Stack
+
+- **React.js**
+- **JavaScript (ES6+)**
+- **HTML5 & CSS3**
+
+---
+
+## 📂 Project Structure
